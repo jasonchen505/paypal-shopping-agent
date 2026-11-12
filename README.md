@@ -22,10 +22,10 @@ export OPENAI_API_KEY=<your OpenAI key>
 export PAYPAL_CLIENT_ID=<your sandbox app client id>
 export PAYPAL_CLIENT_SECRET=<your sandbox app secret>
 
-# One shopping trip from the command line:
-python -m shopping_agent.cli "birthday gift under 50 dollars for a coffee lover"
-
-# Approve the printed URL in your browser (sandbox buyer account), then capture:
+# One shopping trip from the command line. Run it ONCE with --capture:
+# it creates the order, prints the approval URL, and waits. Approve that URL
+# in your browser (sandbox buyer account), then press Enter in the terminal
+# to capture the same order.
 python -m shopping_agent.cli "birthday gift under 50 dollars for a coffee lover" --capture
 ```
 

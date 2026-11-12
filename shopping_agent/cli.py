@@ -38,8 +38,9 @@ def main(argv=None):
         input("Press Enter after approving the order in your browser...")
         print(agent_mod.capture(result))
     else:
-        print("To complete the payment, approve the order at the URL above, then "
-              "re-run with --capture (or capture from the web UI).")
+        print("To complete the payment, re-run with --capture: it creates a "
+              "fresh order, prints its approval URL, and waits for you to "
+              "approve that URL before capturing the same order.")
     return 0
 
 
